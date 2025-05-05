@@ -5,7 +5,6 @@ import {configDotenv} from "dotenv"
 configDotenv();
 
 
-
 app.use(express.json())
 app.use(cookieParser());
 
@@ -16,6 +15,7 @@ app.get("/",(req,res)=>{
 
 
 const PORT=process.env.PORT||5000
+
 myHttpServer.listen(PORT,()=>{
     console.log("server running at:-",PORT)
 })
